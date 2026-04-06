@@ -4,7 +4,7 @@
     {
       "label": "Run LeetCode Java",
       "type": "shell",
-      "command": "javac \"${file}\"; if ($?) { java Solution }",
+      "command": "javac \"${file}\"; if ($?) { cd \"${fileDirname}\"; java Solution }",
       "group": "build",
       "problemMatcher": []
     }

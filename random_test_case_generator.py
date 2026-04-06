@@ -1,31 +1,28 @@
 import pyperclip
-import random
 
-MAX_CELLS = 10**5
+thousands = ["", "M", "MM", "MMM"]
+hundreds  = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"]
+tens      = ["", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"]
+ones      = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
 
-def generate_random_dimensions():
-    # Pick total size first (ensures constraint)
-    total = random.randint(9 * 10**4, MAX_CELLS)
+res = []
 
-    # Find a random divisor pair (m, n)
-    m = random.randint(1, total)
-    while total % m != 0:
-        m = random.randint(1, total)
+for i in range(4000):
+    roman = (
+        thousands[i // 1000] +
+        hundreds[(i % 1000) // 100] +
+        tens[(i % 100) // 10] +
+        ones[i % 10]
+    )
+    res.append(f"\"{roman}\"")
 
-    n = total // m
-    return m, n
+lines = []
+for i in range(0, len(res), 100):
+    chunk = res[i:i+100]
+    lines.append(", ".join(chunk))
 
-def generate_grid(m, n):
-    return [[random.randint(1, 10**5) for _ in range(n)] for _ in range(m)]
+java_array = "{\n" + ",\n".join(lines) + "\n}"
 
-def grid_to_string(grid):
-    return "[\n" + ",\n".join(str(row) for row in grid) + "\n]"
+pyperclip.copy(java_array)
 
-# Generate random valid dimensions
-m, n = generate_random_dimensions()
-grid = generate_grid(m, n)
-
-grid_str = grid_to_string(grid)
-pyperclip.copy(grid_str)
-
-print(f"Copied grid with m={m}, n={n}, total={m*n}")
+print("Copied to clipboard!")
