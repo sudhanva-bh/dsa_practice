@@ -1,28 +1,32 @@
 import pyperclip
+import json
 
-thousands = ["", "M", "MM", "MMM"]
-hundreds  = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"]
-tens      = ["", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"]
-ones      = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
+def generate_worst_case():
+    width = 100
+    height = 100
 
-res = []
+    ops = ["Robot"]
+    args = [[width, height]]
 
-for i in range(4000):
-    roman = (
-        thousands[i // 1000] +
-        hundreds[(i % 1000) // 100] +
-        tens[(i % 100) // 10] +
-        ones[i % 10]
-    )
-    res.append(f"\"{roman}\"")
+    q = 10000
 
-lines = []
-for i in range(0, len(res), 100):
-    chunk = res[i:i+100]
-    lines.append(", ".join(chunk))
+    for i in range(q):
+        if i % 3 == 0:
+            ops.append("getPos")
+            args.append([])
+        elif i % 3 == 1:
+            ops.append("getDir")
+            args.append([])
+        else:
+            ops.append("step")
+            args.append([100000])
 
-java_array = "{\n" + ",\n".join(lines) + "\n}"
+    return ops, args
 
-pyperclip.copy(java_array)
+ops, args = generate_worst_case()
 
-print("Copied to clipboard!")
+output = json.dumps(ops) + "\n" + json.dumps(args)
+pyperclip.copy(output)
+
+print("Worst-case copied to clipboard:\n")
+print(output)
