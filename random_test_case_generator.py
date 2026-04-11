@@ -1,8 +1,14 @@
 import random
 import pyperclip
 
-n = random.randint(10 * 10**4, 10**5)
-nums = [random.randint(1, n) for _ in range(n)]
+n = random.randint(2 * 10**4, 3 * 10**4)
 
-pyperclip.copy("[" + ",".join(map(str, nums)) + "]")
-print(n)
+nums = [random.randint(-10**4, 10**4) for _ in range(n)]
+
+nums.sort()
+
+formatted = "[" + ",".join(map(str, nums)) + "]"
+
+pyperclip.copy(formatted)
+
+print("Array copied to clipboard!")
