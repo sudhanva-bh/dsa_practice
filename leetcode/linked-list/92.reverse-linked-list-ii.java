@@ -20,16 +20,32 @@ class Solution {
     public ListNode reverseBetween(ListNode head, int left, int right) {
         if(left == right) return head;
         
-        if(left != 1) {
-            ListNode l = head;
-            for(int i = 0; i < left - 2; i++)
-                l = l.next;
+        ListNode temp = new ListNode(-1);
+        temp.next = head;
 
-            ListNode prev = l, curr = l.next, nxt = l.next.next;
-            for(int i = 0; i <= right - left; i++) {
-                
-            }
+        ListNode l = temp;
+        for(int i = 0; i < left - 1; i++) {
+            l = l.next;
         }
+
+        ListNode ln = l.next;
+
+        ListNode prev = null;
+        ListNode curr = ln;
+        ListNode next = curr.next;
+
+        int size = right - left + 1;
+        for(int i = 0; i < size; i++) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+
+        l.next = prev;
+        ln.next = curr;
+
+        return temp.next;
     }
 }
 // @lc code=end
