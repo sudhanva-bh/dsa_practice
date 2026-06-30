@@ -1,25 +1,33 @@
 import random
-import string
 import pyperclip
 
-NUM_CASES = 8
-STR_COUNT = 10**4
+def generate() -> str:
+    # Random n within constraints
+    n = random.randint(1, 10**5)
 
-cases = []
+    # Generate costs
+    costs = [random.randint(1, 10**5) for _ in range(n)]
 
-for _ in range(NUM_CASES):
-    arr = []
+    # Generate coins
+    coins = random.randint(1, 10**8)
 
-    for _ in range(STR_COUNT):
-        length = random.randint(90, 100)
+    return f"{str(costs).replace(' ', '')}\n{coins}"
 
-        s = ''.join(random.choices(string.ascii_lowercase, k=length))
-        arr.append(f'"{s}"')
+tests = []
 
-    cases.append("[" + ",".join(arr) + "]")
+# Small edge case
+tests.append("[1]\n1")
 
-output = "\n".join(cases)
+# Large edge case
+costs = [100000] * 100000
+tests.append(f"{str(costs).replace(' ', '')}\n100000000")
 
-pyperclip.copy(output)
+# 6 random tests
+for _ in range(6):
+    tests.append(generate())
 
-print("8 formatted test cases copied to clipboard.")
+all_tests = "\n".join(tests)
+
+pyperclip.copy(all_tests)
+
+print("Copied", len(tests), "test cases to clipboard.")

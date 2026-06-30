@@ -1,0 +1,580 @@
+Frequency Map: {66049=1, 256=2, 4096=1, 92416=1, 585225=1, 123904=1, 201601=1, 278784=1, 26244=1, 295936=1, 797449=2, 808201=1, 806404=1, 690561=1, 774400=1, 265225=1, 636804=1, 952576=1, 695556=1, 24336=1, 54289=1, 80656=1, 28561=1, 138384=1, 221841=1, 318096=1, 811801=1, 633616=1, 685584=1, 839056=2, 976144=1, 992016=1, 966289=1, 2209=1, 185761=1, 10404=1, 3364=1, 86436=1, 206116=1, 550564=1, 599076=1, 316969=1, 49=1, 142129=1, 1849=1, 308025=1, 436921=1, 311364=1, 635209=2, 546121=1, 537289=1, 521284=1, 58564=1, 93636=1, 462400=1, 978121=1, 553536=1, 9801=1, 652864=1, 602176=1, 26569=1, 678976=1, 748225=1, 732736=1, 373321=1, 662596=1, 715716=1, 632025=1, 208849=1, 974169=1, 729=1, 168921=1, 247009=1, 45796=1, 19044=1, 139876=1, 220900=1, 613089=1, 820836=1, 114921=1, 75625=1, 667489=1, 133225=1, 574564=1, 385641=1, 829921=1, 119025=2, 128881=1, 1521=1, 10609=1, 60025=1, 758641=1, 344569=2, 511225=1}
+Max value: 992016
+intmax = 46340
+Ones before adjustment: 0
+Ones after adjustment: -1
+Map after removing 1: {66049=1, 256=2, 4096=1, 92416=1, 585225=1, 123904=1, 201601=1, 278784=1, 26244=1, 295936=1, 797449=2, 808201=1, 806404=1, 690561=1, 774400=1, 265225=1, 636804=1, 952576=1, 695556=1, 24336=1, 54289=1, 80656=1, 28561=1, 138384=1, 221841=1, 318096=1, 811801=1, 633616=1, 685584=1, 839056=2, 976144=1, 992016=1, 966289=1, 2209=1, 185761=1, 10404=1, 3364=1, 86436=1, 206116=1, 550564=1, 599076=1, 316969=1, 49=1, 142129=1, 1849=1, 308025=1, 436921=1, 311364=1, 635209=2, 546121=1, 537289=1, 521284=1, 58564=1, 93636=1, 462400=1, 978121=1, 553536=1, 9801=1, 652864=1, 602176=1, 26569=1, 678976=1, 748225=1, 732736=1, 373321=1, 662596=1, 715716=1, 632025=1, 208849=1, 974169=1, 729=1, 168921=1, 247009=1, 45796=1, 19044=1, 139876=1, 220900=1, 613089=1, 820836=1, 114921=1, 75625=1, 667489=1, 133225=1, 574564=1, 385641=1, 829921=1, 119025=2, 128881=1, 1521=1, 10609=1, 60025=1, 758641=1, 344569=2, 511225=1}
+
+Starting chain from: 66049
+  Visiting 66049, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 0
+
+Starting chain from: 256
+  Visiting 256, frequency = 2
+    Count incremented to 1
+  Visiting 65536, frequency = 0
+    Frequency <= 1, updating res with 1
+  Updating res with count - 1 = 0
+Current res = 1
+
+Starting chain from: 4096
+  Visiting 4096, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 92416
+  Visiting 92416, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 585225
+  Visiting 585225, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 123904
+  Visiting 123904, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 201601
+  Visiting 201601, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 278784
+  Visiting 278784, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 26244
+  Visiting 26244, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 295936
+  Visiting 295936, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 797449
+  Visiting 797449, frequency = 2
+    Count incremented to 1
+    Breaking to avoid overflow (j = 797449)
+  Updating res with count - 1 = 0
+Current res = 1
+
+Starting chain from: 808201
+  Visiting 808201, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 806404
+  Visiting 806404, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 690561
+  Visiting 690561, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 774400
+  Visiting 774400, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 265225
+  Visiting 265225, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 636804
+  Visiting 636804, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 952576
+  Visiting 952576, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 695556
+  Visiting 695556, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 24336
+  Visiting 24336, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 54289
+  Visiting 54289, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 80656
+  Visiting 80656, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 28561
+  Visiting 28561, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 138384
+  Visiting 138384, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 221841
+  Visiting 221841, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 318096
+  Visiting 318096, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 811801
+  Visiting 811801, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 633616
+  Visiting 633616, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 685584
+  Visiting 685584, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 839056
+  Visiting 839056, frequency = 2
+    Count incremented to 1
+    Breaking to avoid overflow (j = 839056)
+  Updating res with count - 1 = 0
+Current res = 1
+
+Starting chain from: 976144
+  Visiting 976144, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 992016
+  Visiting 992016, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 966289
+  Visiting 966289, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 2209
+  Visiting 2209, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 185761
+  Visiting 185761, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 10404
+  Visiting 10404, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 3364
+  Visiting 3364, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 86436
+  Visiting 86436, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 206116
+  Visiting 206116, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 550564
+  Visiting 550564, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 599076
+  Visiting 599076, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 316969
+  Visiting 316969, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 49
+  Visiting 49, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 142129
+  Visiting 142129, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 1849
+  Visiting 1849, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 308025
+  Visiting 308025, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 436921
+  Visiting 436921, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 311364
+  Visiting 311364, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 635209
+  Visiting 635209, frequency = 2
+    Count incremented to 1
+    Breaking to avoid overflow (j = 635209)
+  Updating res with count - 1 = 0
+Current res = 1
+
+Starting chain from: 546121
+  Visiting 546121, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 537289
+  Visiting 537289, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 521284
+  Visiting 521284, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 58564
+  Visiting 58564, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 93636
+  Visiting 93636, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 462400
+  Visiting 462400, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 978121
+  Visiting 978121, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 553536
+  Visiting 553536, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 9801
+  Visiting 9801, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 652864
+  Visiting 652864, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 602176
+  Visiting 602176, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 26569
+  Visiting 26569, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 678976
+  Visiting 678976, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 748225
+  Visiting 748225, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 732736
+  Visiting 732736, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 373321
+  Visiting 373321, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 662596
+  Visiting 662596, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 715716
+  Visiting 715716, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 632025
+  Visiting 632025, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 208849
+  Visiting 208849, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 974169
+  Visiting 974169, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 729
+  Visiting 729, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 168921
+  Visiting 168921, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 247009
+  Visiting 247009, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 45796
+  Visiting 45796, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 19044
+  Visiting 19044, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 139876
+  Visiting 139876, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 220900
+  Visiting 220900, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 613089
+  Visiting 613089, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 820836
+  Visiting 820836, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 114921
+  Visiting 114921, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 75625
+  Visiting 75625, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 667489
+  Visiting 667489, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 133225
+  Visiting 133225, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 574564
+  Visiting 574564, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 385641
+  Visiting 385641, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 829921
+  Visiting 829921, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 119025
+  Visiting 119025, frequency = 2
+    Count incremented to 1
+    Breaking to avoid overflow (j = 119025)
+  Updating res with count - 1 = 0
+Current res = 1
+
+Starting chain from: 128881
+  Visiting 128881, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 1521
+  Visiting 1521, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 10609
+  Visiting 10609, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 60025
+  Visiting 60025, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 758641
+  Visiting 758641, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+
+Starting chain from: 344569
+  Visiting 344569, frequency = 2
+    Count incremented to 1
+    Breaking to avoid overflow (j = 344569)
+  Updating res with count - 1 = 0
+Current res = 1
+
+Starting chain from: 511225
+  Visiting 511225, frequency = 1
+    Frequency <= 1, updating res with 0
+  Updating res with count - 1 = -1
+Current res = 1
+Final res = 1
+Final ones = -1
+Answer = 3

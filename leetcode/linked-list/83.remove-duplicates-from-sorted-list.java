@@ -5,6 +5,8 @@
  */
 
 // @lc code=start
+import java.util.*;
+
 /**
  * Definition for singly-linked list.
 }

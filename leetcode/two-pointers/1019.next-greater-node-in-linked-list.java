@@ -1,0 +1,26 @@
+/*
+ * @lc app=leetcode id=1019 lang=java
+ *
+ * [1019] Next Greater Node In Linked List
+ */
+
+// @lc code=start
+import java.util.*;
+
+// @formatter:off
+// Definition: singly-linked list
+class ListNode {
+    int val;
+    ListNode next;
+    ListNode() {}
+    ListNode(int val) { this.val = val; }
+    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+}
+// @formatter:on
+
+class Solution {
+    public int[] nextLargerNodes(ListNode head) {
+
+    }
+}
+// @lc code=end

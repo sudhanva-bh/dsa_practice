@@ -11,29 +11,25 @@ import java.util.*;
 class Solution {
     List<List<Integer>> res = new ArrayList<>();
     public List<List<Integer>> permute(int[] nums) {
-        int n = nums.length;
+       rec(nums, 0, new boolean[nums.length], new ArrayList<>(nums.length));
+       return res;
+    }
 
-        for(int i : nums) {
-            res.add(new ArrayList<>(Arrays.asList(i)));
+    void rec(int[] nums, int curr, boolean[] taken, List<Integer> currList) {
+        if(curr == nums.length) {
+            res.add(new ArrayList<>(currList));
+            return;
         }
 
-        System.out.println(res);
-
-        for(int i = 1; i < n; i++) {
-            List<List<Integer>> temp = new ArrayList<>();
-            for(List<Integer> curr : res) {
-                for(int j : nums) {
-                    if(!curr.contains(j)) {
-                        List<Integer> tempL = new ArrayList<>(curr);
-                        tempL.add(j);
-                        temp.add(tempL);
-                    }
-                }
+        for(int i = 0; i < nums.length; i++) {
+            if(!taken[i]) {
+                taken[i] = true;
+                currList.add(nums[i]);
+                rec(nums, curr + 1, taken, currList);
+                currList.remove(currList.size() - 1);
+                taken[i] = false;
             }
-            res = temp;
-            System.out.println(res);
         }
-        return res;
     }
 
     public static void main(String[] args) {
