@@ -5,47 +5,48 @@
  */
 
 // @lc code=start
+import java.util.*;
+
 class Solution {
     public boolean isBipartite(int[][] graph) {
         int n = graph.length;
-        int[] bicolor = new int[n];
-        int curr;
 
-        for(int i = 0; i < n; i++) {
-            if(bicolor[i] != 0) {
-                curr = bicolor[i];
+        byte[] color = new byte[n]; // 0 = unvisited, 1, 2 two different colors
 
-                for(int j : graph[i]) {
-                    if(bicolor[j] == 0) {
-                        bicolor[j] = curr == 1 ? 2 : 1;
-                    } else if(bicolor[j] == curr) return false;
-                }
-            } else {
-                curr = 0;
-                for(int j : graph[i]) {
-                    if(bicolor[j] != 0) {
-                        if(curr != 0) {
-                            curr = bicolor[j];
-                        } else {
-                            if(curr != bicolor[j]) return false;
+        Queue<Integer> queue = new ArrayDeque<>();
+
+        for (int i = 0; i < n; i++) {
+            if (color[i] == 0) {
+                queue.add(i);
+
+                color[i] = 1;
+                byte currColor = 1;
+                byte nextColor = -1;
+
+                while (!queue.isEmpty()) {
+                    int size = queue.size();
+
+                    while (size-- > 0) {
+                        int curr = queue.remove();
+
+                        for (int next : graph[curr]) {
+                            if (color[next] == currColor)
+                                return false;
+                            if (color[next] == 0) {
+                                color[next] = nextColor;
+                                queue.add(next);
+                            }
                         }
-                    } else {
-                        bicolor[i] = curr;
                     }
+
+                    byte temp = currColor;
+                    currColor = nextColor;
+                    nextColor = temp;
                 }
-
-                if(curr == 0) curr = 1;
-
-                for(int j : graph[i]) {
-                    bicolor[j] = curr;
-                }
-
-                bicolor[i] = curr == 1 ? 2 : 1;
             }
         }
-        
+
         return true;
     }
 }
 // @lc code=end
-

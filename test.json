@@ -1,0 +1,40 @@
+{
+  "link": "https://leetcode.com/problems/dungeon-game",
+  "questionId": "174",
+  "questionFrontendId": "174",
+  "questionTitle": "Dungeon Game",
+  "titleSlug": "dungeon-game",
+  "difficulty": "Hard",
+  "isPaidOnly": false,
+  "question": "\u003Cp\u003EThe demons had captured the princess and imprisoned her in \u003Cstrong\u003Ethe bottom-right corner\u003C/strong\u003E of a \u003Ccode\u003Edungeon\u003C/code\u003E. The \u003Ccode\u003Edungeon\u003C/code\u003E consists of \u003Ccode\u003Em x n\u003C/code\u003E rooms laid out in a 2D grid. Our valiant knight was initially positioned in \u003Cstrong\u003Ethe top-left room\u003C/strong\u003E and must fight his way through \u003Ccode\u003Edungeon\u003C/code\u003E to rescue the princess.\u003C/p\u003E\n\n\u003Cp\u003EThe knight has an initial health point represented by a positive integer. If at any point his health point drops to \u003Ccode\u003E0\u003C/code\u003E or below, he dies immediately.\u003C/p\u003E\n\n\u003Cp\u003ESome of the rooms are guarded by demons (represented by negative integers), so the knight loses health upon entering these rooms; other rooms are either empty (represented as 0) or contain magic orbs that increase the knight&#39;s health (represented by positive integers).\u003C/p\u003E\n\n\u003Cp\u003ETo reach the princess as quickly as possible, the knight decides to move only \u003Cstrong\u003Erightward\u003C/strong\u003E or \u003Cstrong\u003Edownward\u003C/strong\u003E in each step.\u003C/p\u003E\n\n\u003Cp\u003EReturn \u003Cem\u003Ethe knight&#39;s minimum initial health so that he can rescue the princess\u003C/em\u003E.\u003C/p\u003E\n\n\u003Cp\u003E\u003Cstrong\u003ENote\u003C/strong\u003E that any room can contain threats or power-ups, even the first room the knight enters and the bottom-right room where the princess is imprisoned.\u003C/p\u003E\n\n\u003Cp\u003E&nbsp;\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong class=\"example\"\u003EExample 1:\u003C/strong\u003E\u003C/p\u003E\n\u003Cimg alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/03/13/dungeon-grid-1.jpg\" style=\"width: 253px; height: 253px;\" /\u003E\n\u003Cpre\u003E\n\u003Cstrong\u003EInput:\u003C/strong\u003E dungeon = [[-2,-3,3],[-5,-10,1],[10,30,-5]]\n\u003Cstrong\u003EOutput:\u003C/strong\u003E 7\n\u003Cstrong\u003EExplanation:\u003C/strong\u003E The initial health of the knight must be at least 7 if he follows the optimal path: RIGHT-&gt; RIGHT -&gt; DOWN -&gt; DOWN.\n\u003C/pre\u003E\n\n\u003Cp\u003E\u003Cstrong class=\"example\"\u003EExample 2:\u003C/strong\u003E\u003C/p\u003E\n\n\u003Cpre\u003E\n\u003Cstrong\u003EInput:\u003C/strong\u003E dungeon = [[0]]\n\u003Cstrong\u003EOutput:\u003C/strong\u003E 1\n\u003C/pre\u003E\n\n\u003Cp\u003E&nbsp;\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003EConstraints:\u003C/strong\u003E\u003C/p\u003E\n\n\u003Cul\u003E\n\t\u003Cli\u003E\u003Ccode\u003Em == dungeon.length\u003C/code\u003E\u003C/li\u003E\n\t\u003Cli\u003E\u003Ccode\u003En == dungeon[i].length\u003C/code\u003E\u003C/li\u003E\n\t\u003Cli\u003E\u003Ccode\u003E1 &lt;= m, n &lt;= 200\u003C/code\u003E\u003C/li\u003E\n\t\u003Cli\u003E\u003Ccode\u003E-1000 &lt;= dungeon[i][j] &lt;= 1000\u003C/code\u003E\u003C/li\u003E\n\u003C/ul\u003E\n",
+  "exampleTestcases": "[[-2,-3,3],[-5,-10,1],[10,30,-5]]\n[[0]]",
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array",
+      "translatedName": null
+    },
+    {
+      "name": "Dynamic Programming",
+      "slug": "dynamic-programming",
+      "translatedName": null
+    },
+    {
+      "name": "Matrix",
+      "slug": "matrix",
+      "translatedName": null
+    }
+  ],
+  "hints": [],
+  "solution": {
+    "id": "897",
+    "canSeeDetail": false,
+    "paidOnly": true,
+    "hasVideoSolution": false,
+    "paidOnlyVideo": true
+  },
+  "companyTagStats": null,
+  "likes": 6302,
+  "dislikes": 118,
+  "similarQuestions": "[{\"title\": \"Unique Paths\", \"titleSlug\": \"unique-paths\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Minimum Path Sum\", \"titleSlug\": \"minimum-path-sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Cherry Pickup\", \"titleSlug\": \"cherry-pickup\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Minimum Path Cost in a Grid\", \"titleSlug\": \"minimum-path-cost-in-a-grid\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Minimum Health to Beat Game\", \"titleSlug\": \"minimum-health-to-beat-game\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Paths in Matrix Whose Sum Is Divisible by K\", \"titleSlug\": \"paths-in-matrix-whose-sum-is-divisible-by-k\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Check if There is a Path With Equal Number of 0's And 1's\", \"titleSlug\": \"check-if-there-is-a-path-with-equal-number-of-0s-and-1s\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]"
+}

@@ -1,33 +1,24 @@
 import random
 import pyperclip
 
-def generate() -> str:
-    # Random n within constraints
-    n = random.randint(1, 10**5)
+NUM_ARRAYS = 8
+MIN_N = 5_000
+MAX_N = 50_000
+MIN_VAL = 0
+MAX_VAL = 50_000
 
-    # Generate costs
-    costs = [random.randint(1, 10**5) for _ in range(n)]
+arrays = []
 
-    # Generate coins
-    coins = random.randint(1, 10**8)
+for _ in range(NUM_ARRAYS):
+    n = random.randint(MIN_N, MAX_N)
+    arr = [random.randint(MIN_VAL, MAX_VAL) for _ in range(n)]
+    arrays.append(arr)
 
-    return f"{str(costs).replace(' ', '')}\n{coins}"
+# Format as Python code
+output = ""
+for arr in arrays:
+    output += f"{arr},\n"
 
-tests = []
+pyperclip.copy(output)
 
-# Small edge case
-tests.append("[1]\n1")
-
-# Large edge case
-costs = [100000] * 100000
-tests.append(f"{str(costs).replace(' ', '')}\n100000000")
-
-# 6 random tests
-for _ in range(6):
-    tests.append(generate())
-
-all_tests = "\n".join(tests)
-
-pyperclip.copy(all_tests)
-
-print("Copied", len(tests), "test cases to clipboard.")
+print(f"Copied {NUM_ARRAYS} arrays to clipboard.")
